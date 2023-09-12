@@ -1,0 +1,30 @@
+#folders{
+    margin-top: 30px;
+}
+#folders-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.folders-title-item{
+    font-size: 12px;
+    font-weight: 400;
+    color: #00000099;
+}
+#folders-list{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.folders-item{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.folders-list-title{
+    font-size: 15px;
+    font-weight: 500;
+    color: #00000099;
+}

@@ -1,0 +1,29 @@
+#header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+#logos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#new-note{
+    display: flex;
+    justify-content: center;
+}
+#btn-new-note{
+    width:260px;
+    height: 44px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 3px;
+    background-color: #D9614C;
+
+}
+#btn-new-note:hover{
+    cursor: pointer;
+    background-color: #cb4c34;
+}

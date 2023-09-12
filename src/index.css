@@ -1,4 +1,9 @@
+@font-face {
+    font-family: estedad;
+    src: url('./assets/fonts/Estedad-v5.0-Fontjo.com/estedad.woff2');
+}
 body{
+    font-family: estedad;
     margin: 0;
     height: 100%;
 }

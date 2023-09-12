@@ -1,0 +1,26 @@
+#last-note{
+    margin-top:50px ;
+}
+#title-text{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #00000099;
+}
+#last-note-list{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.last-note-item{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.last-note-title{
+    font-size: 15px;
+    font-weight: 500;
+    color: #00000099;
+}

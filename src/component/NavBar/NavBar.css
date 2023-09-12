@@ -1,5 +1,6 @@
 #navbar{
     flex-basis: 20%;
-
     background-color: #F8EEE2;
+    padding: 24px 24px;
+    box-sizing: border-box;
 }
