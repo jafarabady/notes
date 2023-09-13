@@ -7,3 +7,10 @@ body{
     margin: 0;
     height: 100%;
 }
+button{
+    font-family: estedad;
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}

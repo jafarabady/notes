@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 15px;
+    gap: 30px;
+    padding: 0 20px;
 }
 #logos{
     display: flex;
@@ -26,4 +27,8 @@
 #btn-new-note:hover{
     cursor: pointer;
     background-color: #cb4c34;
+}
+#button-new-note{
+    background-color: unset;
+    border: none;
 }

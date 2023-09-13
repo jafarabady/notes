@@ -1,0 +1,32 @@
+#note-list-items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title-note{
+   font-size: 16px;
+    font-weight: 600;
+    color: #363B40;
+}
+.items{
+    width: 310px;
+    height: 105px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border-right: 4px solid #4C86A8;
+    background: #FCF1E3;
+}
+.date-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: 400;
+    color: #595550;
+}
+.text-items{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
