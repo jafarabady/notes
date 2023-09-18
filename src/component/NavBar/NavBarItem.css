@@ -5,6 +5,7 @@
     gap: 10px;
     background-color: unset;
     border: none;
+    cursor: pointer;
 }
 .navbar-item-title{
     font-size: 15px;
@@ -15,6 +16,7 @@
 
 .navbar-item--selected{
     background: #FFFBFA;
-    color: black !important;
     font-weight: bolder;
+    color: black !important;
+    transition: 400ms background;
 }

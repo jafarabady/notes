@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.css'
 import logo from '@/assets/images/Group 1.png'
 import searchLogo from '@/assets/images/Frame.png'
+import {Link} from "react-router-dom";
 
 function Index(props) {
     return (
@@ -12,12 +13,14 @@ function Index(props) {
                 </div>
                 <div>
                     <button id='button-new-note'>
+
                         <img src={searchLogo} alt="search"/>
                     </button>
                 </div>
             </div>
             <div id='new-note'>
                 <button id='btn-new-note'>
+                    {/*<Link to="/note">lol</Link>*/}
                     <span>+ یادداشت جدید</span>
                 </button>
             </div>

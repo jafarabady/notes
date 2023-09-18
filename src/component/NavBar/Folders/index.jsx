@@ -1,28 +1,37 @@
 import './Folders.css'
-import React from 'react';
+import React, {useState} from 'react';
 import FolderIcon from '@/assets/images/foldericon.png'
 import NavBarItem from "@/component/NavBar/NavBarItem.jsx";
 import addFolderIcon from '@/assets/images/add-folder.png'
 import openFolder from '@/assets/images/open-folder.png'
+
 const folders = [
     {
-        title: '1'
+        title: 'همه یادداشت‌ها',
+        id:1
     },
     {
-        title: '2'
+        title: 'کاری',
+        id:2
     },
     {
-        title: '3'
+        title: 'مسافرت',
+        id:3
     },
     {
-        title: '4'
+        title: 'رویدادها',
+        id:4
     },
     {
-        title: '5'
+        title: 'باشگاه',
+        id:5
     },
 ]
 
 function Index(props) {
+const [selected,setSelected] = useState(null)
+
+
     return (
         <div id='folders'>
             <div id='folders-title'>
@@ -35,12 +44,12 @@ function Index(props) {
             </div>
             <div id='folders-list'>
                 {
-                    folders.map((title,i) => {
-                        return (<NavBarItem
-                                key={title.title}
-                                text={title.title}
-                                isSelected={i===0}
-                                icon={i===0 ? openFolder : FolderIcon}/>
+                    folders.map((item) => {
+                        return (<NavBarItem key={item.id}
+                                            {...item}
+                                            isSelected={item.id===selected}
+                                            onClick={() => setSelected(item.id)}
+                                            icon={item.id===selected? openFolder : FolderIcon}/>
 
                         )
 
