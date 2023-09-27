@@ -4,7 +4,8 @@ import Header from "./Header/index.jsx";
 import LastNotes from "./LastNotes/index.jsx";
 import Folders from "./Folders/index.jsx";
 import More from "./More/index.jsx";
-function Index(props) {
+function Index() {
+
     return (
         <div id={'navbar'}>
             <Header/>

@@ -1,0 +1,36 @@
+.button{
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: 0.6em;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    line-height: 1;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.button--red{
+    color: red;
+    background-color: #ffeaea;
+    transition: 300ms background-color ease;
+}
+.button--red:hover{
+    color: #ffeaea;
+    background-color: red;
+}
+.button--green{
+    color: green;
+    background-color: #efffe5;
+    transition: 300ms background-color ease;
+}
+.button--green:hover{
+    color: #efffe5 ;
+    background-color: green;
+
+}
