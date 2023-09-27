@@ -11,19 +11,19 @@ function Index(props) {
                     خلاصه جلسه ۱۲ صد کدرز
                 </div>
                 <div className='header-content'>
-                    <img src={menuIcon} alt=""/>
+                    <img draggable={"false"} src={menuIcon} alt=""/>
                 </div>
             </div>
             <div className='note-form-second-header'>
                 <div className='second-header-content'>
-                    <img src={folderIcon} alt=""/>
+                    <img draggable={"false"} src={folderIcon} alt=""/>
                     <div>پوشه</div>
                     <div>شخصی</div>
                 </div>
                 <div className='second-header-content'>
-                    <img src={calenderIcon} alt=""/>
-                    <div>پوشه</div>
-                    <div>شخصی</div>
+                    <img draggable={"false"} src={calenderIcon} alt=""/>
+                    <div>زمان ایجاد</div>
+                    <div>۱۸ شهریور ۱۴۰۲</div>
                 </div>
             </div>
             <hr/>
