@@ -27,9 +27,7 @@ function Index(props) {
                 </div>
             </div>
             <hr/>
-            <div>
-                <textarea/>
-            </div>
+                <textarea autoFocus/>
         </div>
     );
 }
