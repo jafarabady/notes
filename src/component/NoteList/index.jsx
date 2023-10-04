@@ -1,48 +1,26 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import './NoteList.css'
 import NoteListItem from "./NoteListItem/index.jsx";
+import {noteContext} from "@/providers/NoteProvider.jsx";
+import {Link, useParams} from "react-router-dom";
 
-const noteList = [
-    {
-        id: 1,
-        title: 'خلاصه جلسه ۱۲ صد کدرز',
-        text: 'میخوام یک سری کارهارو انجام بدم',
-        date: '۱شهریور۱۴۰۲',
-        color: '#4C86A8'
-    },
-    {
-        id: 2,
-        title: 'کتاب‌هایی که می‌خوام بخونم',
-        text: 'میخوام یک سری کارهارو انجام بدممیخوام یک سری کارهارو انجام بدم',
-        date: '۱شهریور۱۴۰۲',
-        color: '#38A3A5'
-    },
-    {
-        id: 3,
-        title: 'هدف من برای سال جدید',
-        text: 'میخوام یک سری کارهارو انجام بدم',
-        date: '۱شهریور۱۴۰۲',
-        color: '#8377D1'
-    }
-]
 
 function Index(props) {
-    const [isSelected, setSelected] = useState(null)
-    // const handleClick=(item)=>{
-    //     setSelected(item.id)
-    // }
+    const {noteId} = useParams()
+    const {notes} = useContext(noteContext)
 
     return (
         <div id='note-list'>
             <span id='note-list-title'>همه یادداشت‌ها</span>
             {
-                noteList.map((item) => {
+                notes.map((item) => {
                     return (
-                        <NoteListItem key={item.title}
-                                      {...item}
-                                      selected={item.id===isSelected}
-                                      onClick={()=> setSelected(item.id)} />
-                            )
+                        <Link to={`/note/${item.id}`} key={item.title}>
+                            <NoteListItem
+                            {...item}
+                            selected={item.id == noteId}/>
+                        </Link>
+                    )
                 })
             }
 

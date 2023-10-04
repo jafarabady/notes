@@ -1,8 +1,10 @@
 import NavBar from "./component/NavBar";
 import NoteList from "./component/NoteList";
-import Note from "./component/Note";
+
 import './App.css'
 import {NoteProvider} from "@/providers/NoteProvider.jsx";
+
+import {Outlet} from "react-router-dom";
 
 
 
@@ -11,7 +13,7 @@ function App() {
         <NoteProvider>
             <NavBar />
             <NoteList/>
-            <Note/>
+            <Outlet/>
         </NoteProvider>
     )
 }

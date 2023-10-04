@@ -41,13 +41,11 @@ function Index(props) {
         setFolders([{title: inputValue, id: folders.length + 1}, ...folders])
         setShowInput(false)
         setInputValue(null)
-
     }
 
     useEffect(() => {
         const handleClick = (event) => {
             const isClickedForm = event.target.closest(".add-folder,#folders-title")
-            console.log('mmd')
             if (!isClickedForm) {
                 setShowInput(false)
             }
